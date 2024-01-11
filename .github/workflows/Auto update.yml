@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         with:
           ref: 'master'
 
@@ -38,7 +38,7 @@ jobs:
           sudo timedatectl set-timezone "$TZ"
 
       - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@master
+        uses: Mattraks/delete-workflow-runs@main
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
@@ -46,7 +46,7 @@ jobs:
           keep_minimum_runs: 0
         
       - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@master
+        uses: mxschmitt/action-tmate@main
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
   job_auto_update_master:
@@ -393,7 +393,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         with:
           ref: 'master'
 
@@ -451,7 +451,7 @@ jobs:
           echo "branch_exists=$(git ls-remote --heads origin ${{ matrix.pakcages }}-$New_PKG_VERSION | tr -d '\n')" >> $GITHUB_OUTPUT
 
       - name: Git Auto Commit
-        uses: stefanzweifel/git-auto-commit-action@master
+        uses: stefanzweifel/git-auto-commit-action@main
         id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
