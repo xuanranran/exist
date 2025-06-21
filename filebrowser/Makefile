@@ -5,13 +5,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=filebrowser
-PKG_VERSION:=2.33.1
+PKG_VERSION:=2.33.2
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=02db83c72ef3e14bac8df085a49f873261c6fb69
 PKG_SOURCE_URL:=https://github.com/filebrowser/filebrowser
-PKG_HASH:=cb5186eb61af952f2bd25009f1ea8e8f00cca42dfcf5ac1c8958967ca5d447eb
+PKG_HASH:=c0af0ce2ebed89b2f31cda15b7a8f200384a52ceedc2c7f7fae99abf1d00e4c9
 
 PKG_LICENSE:=Apache-2.0
 PKG_LICENSE_FILES:=LICENSE
