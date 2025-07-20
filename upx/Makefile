@@ -7,12 +7,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=upx
-PKG_VERSION:=5.0.1
+PKG_VERSION:=5.0.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-src.tar.xz
 PKG_SOURCE_URL:=https://github.com/upx/upx/releases/download/v$(PKG_VERSION)/$(PKG_SOURCE)
-PKG_HASH:=18b14ac2e7e2c88d37eed11f3e3e8c5867ea12f79690a36a2a8b1673e5d969e2
+PKG_HASH:=95f1d864156cc2560cd38dd926410f2a4cd838c83f2675da6cf552bbcb9d060c
 
 PKG_MAINTAINER:=Xingwang Liao <kuoruan@gmail.com>
 PKG_LICENSE:=GPL-2.0-only
